@@ -1,3 +1,5 @@
+import { BsArrowUpRight } from "react-icons/bs";
+
 export function Internship() {
   const internships = [
     {
@@ -14,79 +16,72 @@ export function Internship() {
     },
     {
       id: 3,
-      name: "LetsIntern",
+      name: "Unstop",
       image: "/i3.png",
-      link: "https://www.letsintern.com/",
+      link: "https://unstop.com/internship-portal",
     },
     {
       id: 4,
-      name: "Oasis Infobyte",
+      name: "National Internship Portal",
       image: "/i4.png",
-      link: "https://oasisinfobyte.com/",
+      link: "https://internship.aicte-india.org/index.php",
     },
-    {
+     {
       id: 5,
-      name: "Internpe",
+      name: "Apna",
       image: "/i5.png",
-      link: "https://www.internpe.in/",
+      link: "https://apna.co/",
     },
     {
       id: 6,
-      name: "TechnoHacks",
+      name: "Glassdoor",
       image: "/i6.png",
-      link: "https://technohacks.co.in/",
+      link: "https://www.glassdoor.co.in/index.htm/",
     },
     {
       id: 7,
-      name: "Bharat Intern",
+      name: "Foundit",
       image: "/i7.png",
-      link: "https://bharatintern.live/",
+      link: "https://www.foundit.in/",
     },
     {
       id: 8,
-      name: "CodSoft",
+      name: "Smart Internz",
       image: "/i8.png",
-      link: "https://www.codsoft.in/",
-    },
-    {
-      id: 9,
-      name: "Prodigy InfoTech",
-      image: "/i9.png",
-      link: "https://prodigyinfotech.dev/",
-    },
-    {
-      id: 10,
-      name: "Unified Mentor",
-      image: "/i10.png",
-      link: "https://unifiedmentor.com/",
+      link: "https://skillwallet.smartinternz.com/virtual-internship-programs/",
     },
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-5 my-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mx-5 my-10">
       {internships.map((intern) => (
         <div
           key={intern.id}
-          className="bg-white shadow-lg rounded-2xl p-3 hover:shadow-2xl transition transform hover:-translate-y-1"
+          className="bg-white shadow-lg rounded-2xl p-3 hover:shadow-2xl transition"
         >
-          <img
-            src={intern.image}
-            alt={intern.name}
-            className="rounded-xl mb-4 w-full h-48 object-cover"
-          />
-          <h4 className="text-lg font-semibold text-center mb-2">
-            {intern.name}
-          </h4>
-          <div className="flex justify-end">
+          {/* IMAGE + ICON OVERLAY */}
+          <div className="relative">
+            <img
+              src={intern.image}
+              alt={intern.name}
+              className="rounded-xl mb-4 w-full h-48 object-cover"
+            />
+
+            {/* Icon Button (Bottom-right) */}
             <a
               href={intern.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-1 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition duration-300"
+              className="absolute bottom-2 right-2 bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 transition"
             >
-              Visit
+              <BsArrowUpRight className="text-xl" />
             </a>
           </div>
+
+          {/* TITLE */}
+          <h4 className="text-lg font-semibold text-center mb-2">
+            {intern.name}
+          </h4>
         </div>
       ))}
     </div>
