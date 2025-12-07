@@ -49,6 +49,16 @@ export function Skillvault() {
           </NavLink>
 
           <NavLink
+            to="project"
+            className={({ isActive }) =>
+              `px-4 py-2 rounded-full transition font-medium
+              ${isActive ? "bg-blue-500 text-white shadow" : "hover:bg-blue-100"}`
+            }
+          >
+           Project
+          </NavLink>
+
+          <NavLink
             to="favorites"
             className={({ isActive }) =>
               `px-4 py-2 rounded-full transition font-medium

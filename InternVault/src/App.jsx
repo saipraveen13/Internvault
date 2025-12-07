@@ -11,6 +11,7 @@ import { Skills } from "./pages/skills";
 import { Course } from "./pages/courses";
 import { Resume } from "./pages/resume";
 import { SkillPrompt } from "./pages/skillprompt";
+import { Project } from "./pages/project";
 
 import { Login } from "./pages/login";
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="courses" element={<Course />} />
           <Route path="resume" element={<Resume />} />
           <Route path="skillprompt" element={<SkillPrompt />} />
+          <Route path="project" element={<Project />} />
         </Route>
       </Routes>
     </section>
