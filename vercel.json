@@ -1,0 +1,11 @@
+{
+    "buildCommand": "cd Internvault && npm run build",
+    "outputDirectory": "Internvault/dist",
+    "installCommand": "cd Internvault && npm install",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
