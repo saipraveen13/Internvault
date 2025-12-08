@@ -2,7 +2,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { GoOrganization } from "react-icons/go";
 import { MdOutlineLocalOffer, MdOutlinePayment } from "react-icons/md";
 import { IoMdInformationCircleOutline } from "react-icons/io";
-
+// import { Internship } from "./pages/internship";
 
 export function Home() {
   const cards = [
