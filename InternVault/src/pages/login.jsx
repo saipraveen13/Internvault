@@ -7,7 +7,6 @@ export function Login({ setIsLoggedIn }) {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // TEMP LOGIN (replace with Firebase later)
     const email = e.target.email.value;
     const password = e.target.password.value;
 
@@ -22,7 +21,7 @@ export function Login({ setIsLoggedIn }) {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen  p-4">
+    <div className="flex justify-center items-center mt-25 p-4">
       <form
         onSubmit={handleLogin}
         className="w-full max-w-sm bg-white shadow-xl rounded-2xl p-6 flex flex-col gap-5"
@@ -62,8 +61,6 @@ export function Login({ setIsLoggedIn }) {
             {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
           </span>
         </div>
-
-        {/* Login Button */}
         <button
           type="submit"
           className="w-full bg-blue-500 text-white py-2 rounded-full hover:bg-blue-600 

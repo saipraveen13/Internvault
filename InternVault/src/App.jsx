@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Home } from "./pages/Home";
+import { Home } from "./pages/home";
 import { Internship } from "./pages/internship";
 import { Prompts } from "./pages/prompt";
 import { Skillvault } from "./pages/skillvault";
